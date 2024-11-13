@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  background-color: #1e1e2f;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+h1 {
+  color: #4caf50;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.budget-form, .expense-form {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.budget-info {
+  font-size: 18px;
+  color: #f4f4f9;
+  margin: 20px 0;
+}
+
+.budget-info p {
+  font-weight: bold;
+}
+
+#totalBudget, #leftBudget {
+  color: #4caf50;
+  font-size: 24px;
+}
+
+input {
+  padding: 10px;
+  width: 80%;
+  max-width: 300px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.meter {
+  margin: 20px 0;
+}
+
+.meter-bar {
+  width: 100%;
+  height: 30px;
+  border: 2px solid #333;
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+#fill {
+  height: 100%;
+  background-color: #4caf50;
+  width: 0%;
+  transition: width 0.3s;
+  border-radius: 15px;
+}
+
+canvas {
+  margin-top: 20px;
+}

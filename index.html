@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Budget Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2331/2331946.png" type="image/png"> <!-- Add a favicon -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js for graph -->
+</head>
+<body>
+  <div class="container">
+    <h1>Budget Tracker</h1>
+
+    <!-- Budget Form -->
+    <div class="budget-form">
+      <label for="budget">Enter Your Monthly Budget:</label>
+      <input type="number" id="budget" placeholder="Enter budget" required>
+      <button id="setBudget">Set Budget</button>
+    </div>
+
+    <!-- Display Total Budget and Remaining Budget -->
+    <div class="budget-info">
+      <p><strong>Total Budget: </strong><span id="totalBudget">0</span></p>
+      <p><strong>Left Budget: </strong><span id="leftBudget">0</span></p>
+    </div>
+
+    <!-- Expense Form -->
+    <div class="expense-form">
+      <label for="expense">Enter Daily Expense:</label>
+      <input type="number" id="expense" placeholder="Enter expense" required>
+      <button id="addExpense">Add Expense</button>
+    </div>
+
+    <!-- Budget Meter -->
+    <div class="meter">
+      <h2>Budget Meter</h2>
+      <div id="budgetMeter" class="meter-bar">
+        <div id="fill"></div>
+      </div>
+    </div>
+
+    <!-- Graph to Display Previous Expenses -->
+    <h2>Expenses for the Past Week</h2>
+    <canvas id="expenseGraph" width="400" height="200"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
